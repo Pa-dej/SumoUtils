@@ -1,0 +1,24 @@
+name: SumoUtils
+version: '${project.version}'
+main: me.padej.sumoutils.SumoUtils
+api-version: '1.20'
+author: Padej_ & SibylSv
+
+commands:
+
+  sumoutils:
+    usage: /sumoutils <disable|enable>
+    aliases: [su]
+    children:
+      disable:
+        usage: /sumoutils disable
+        permission: sumoutils.event
+      enable:
+        usage: /sumoutils enable
+        permission: sumoutils.event
+      stats:
+        usage: /sumoutils stats <playerName>
+      global_stats:
+        usage: /sumoutils global_stats
+      info:
+        usage: /sumoutils info
